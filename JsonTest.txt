@@ -1,0 +1,14 @@
+{
+“timestamp”: “YYYY-MM-DD” (or whatever timestamp format we want),
+“infection_type”: “MRSA” (and other values TBD, name of disease),
+“location”: {
+	“hospital”: “Hospital in Chris’ Basement”,
+	“address”: “1401 Slaterville Road”,
+	“city”: “Ithaca”,
+	“state”: “NY”,
+	“zip”: 14850,
+		“county”: “Tompkins County”,
+	“latitude”: 29.99,
+	“longitude”: -90.01
+}
+}
