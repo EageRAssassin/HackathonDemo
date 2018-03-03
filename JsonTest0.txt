@@ -1,0 +1,27 @@
+{
+    "timestamp":"Smith",
+    "infection_type":["ABC", "CBA"],
+     "age":25,
+     "location":[
+         {
+	"hospital": "Hospital in Chris’ Basement",
+	"address": "1401 Slaterville Road",
+	"city": "Ithaca",
+	"state": "NY",
+	"zip": 14850,
+	"county": "Tompkins County",
+	"latitude": 29.99,
+	"longitude": -90.01
+         },
+         {
+	"hospital": "Gannett",
+	"address": "Cornell University",
+	"city": "Ithaca",
+	"state": "NY",
+	"zip": 14850,
+	"county": "Tompkins County",
+	"latitude": 30,
+	"longitude": 50
+         }
+     ]
+}

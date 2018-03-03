@@ -7,7 +7,7 @@
 	“city”: “Ithaca”,
 	“state”: “NY”,
 	“zip”: 14850,
-		“county”: “Tompkins County”,
+	“county”: “Tompkins County”,
 	“latitude”: 29.99,
 	“longitude”: -90.01
 }

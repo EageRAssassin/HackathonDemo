@@ -1,6 +1,9 @@
+package MainDemo;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+
+import MainDemo.JsonReader;
 
 public class Prototype {
 
@@ -37,7 +40,13 @@ public class Prototype {
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setTitle("Prototype");
-		System.out.println("ok");
+		
+		JsonReader j = new JsonReader();
+		try {
+			j.readJsonFromFile("JsonTest0.txt");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }
