@@ -5,5 +5,7 @@
 	<classpathentry kind="lib" path="/Users/kewangtekishikaku/Documents/workspace/HackathonDemo/json-simple-1.1.jar"/>
 	<classpathentry kind="lib" path="/Users/huangbaiwei/Downloads/rJava/inst/jri/REngine.jar"/>
 	<classpathentry kind="lib" path="/Users/huangbaiwei/Documents/GitHub/HackathonDemo/RserveEngine.jar"/>
+	<classpathentry kind="lib" path="/Users/huangbaiwei/Documents/GitHub/HackathonDemo/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/huangbaiwei/Documents/GitHub/HackathonDemo/material-ui-swing.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

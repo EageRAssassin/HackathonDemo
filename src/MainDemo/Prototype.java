@@ -10,6 +10,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
@@ -29,7 +30,7 @@ public class Prototype {
 	private JMenuItem i11, i12, i3, i4, i5;
 	private JPanel cards;
 	private JTextField searchField;
-
+	private JLabel resultHead;
 	/**
 	 * Launch the application.
 	 */
@@ -85,14 +86,12 @@ public class Prototype {
 		menuBar.add(menu2);
 		frame.setJMenuBar(menuBar);
 
-		// seeting up layout
+		// setting up layout
 		cards = new JPanel(new CardLayout());
 
 		JButton searchButton = new JButton("Search");
 		searchButton.setPreferredSize(new Dimension(130, 50));
 		searchButton.setFont(new Font("Arial", Font.PLAIN, 30));
-		JButton button2 = new JButton("THIS IS BUTTON 2");
-		JButton button3 = new JButton("THIS IS BUTTON 3");
 		
 		// Setting up first Search Panel
 		JPanel searchPanel = new JPanel();
@@ -109,23 +108,19 @@ public class Prototype {
 			public void actionPerformed(ActionEvent e) {
 				CardLayout cardLayout = (CardLayout) cards.getLayout();
 				cardLayout.next(cards);
+				updateResultPanel();
 			}
 		});
 		
 		
-		
-		
+		//setting up the result panel
 		
 		
 		JPanel resultPanel = new JPanel();
-		resultPanel.add(button2);
-
-		JPanel card3 = new JPanel();
-		card3.add(button3);
-
+		resultPanel.add(new JButton("Nothing"));
 		cards.add(searchPanel);
 		cards.add(resultPanel);
-		cards.add(card3);
+		
 		
 		// make all the things move!
 		MaterialUIMovement animate = new MaterialUIMovement (new Color (230, 230, 230), 5, 1000 / 30);
@@ -133,12 +128,23 @@ public class Prototype {
 		animate.add(searchField);
 		
 		frame.getContentPane().add(cards);
+//		frame.EXIT_ON_CLOSE = 1; TODO
 		JsonReader j = new JsonReader();
 		try {
 			j.readJsonFromFile("JsonTest0.txt");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
+		
+		
 	}
 
+
+
+	public void updateResultPanel() {
+		resultHead.setText("CHANGED");
+		frame.repaint();
+	}
+	
 }
